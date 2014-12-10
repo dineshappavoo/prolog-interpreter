@@ -9,6 +9,7 @@ An interpreter is a computer program that directly executes, i.e. performs, inst
 
 ###DCG - Definite Clause Grammar [Right Recursive]
 
+```
 P  ::= K.
 K  ::= begin D; C end
 D  ::= const I = N D' | var I D' %| I := N D'
@@ -20,6 +21,7 @@ E  ::= I := E E' |I E' | N E'
 E' ::= ε | + E E' | - E E' | * E E' | / E E'
 I  ::= x | y | z | u | v
 N  ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+```
 
 ##Install
 
@@ -30,7 +32,9 @@ This basic interpreter considers two variables x and y in the input code and gen
 
 A valid code block may look like this,
 
-```[begin, var, x,;, var, y,;, var ,z,;, z,:=,1,;, w,:=,x,;, while ,not ,w, =, 0 ,do, z, :=,z,*,y,;, w,:=,w,-,1, endwhile, end,.]```
+```
+[begin, var, x,;, var, y,;, var ,z,;, z,:=,1,;, w,:=,x,;, while ,not ,w, =, 0 ,do, z, :=,z,*,y,;, w,:=,w,-,1, endwhile, end,.]
+```
 
 
 ##Project Contributors
