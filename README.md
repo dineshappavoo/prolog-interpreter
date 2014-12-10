@@ -30,7 +30,7 @@ This basic interpreter considers two variables x and y in the input code and gen
 
 A valid code block may look like this,
 
-[begin, var, x,;, var, y,;, var ,z,;, z,:=,1,;, w,:=,x,;, while ,not ,w, =, 0 ,do, z, :=,z,*,y,;, w,:=,w,-,1, endwhile, end,.]
+```[begin, var, x,;, var, y,;, var ,z,;, z,:=,1,;, w,:=,x,;, while ,not ,w, =, 0 ,do, z, :=,z,*,y,;, w,:=,w,-,1, endwhile, end,.]```
 
 
 ##Project Contributors
